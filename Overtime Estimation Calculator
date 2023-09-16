@@ -1,0 +1,32 @@
+# Assign values and names.
+print('CALCULATING OVER TIME (ESTIMATE)')
+print("Enter you hours plus overtime worked. Ex. Fourty hrs worked with three hrs overtime. Enter 43.")
+hrsperweek = (40)
+hoursWorked = float (input("Enter Hours:"))
+payRate = float(input("Enter Wages:"))
+#print("Wages",input(payRate))
+# Assign a value to the overtime variable.
+stateTaxrate = float(0.0391)
+fedTaxrate = float(0.1389)
+ficaTaxrate = float(0.0765)
+hrsperweek = (40)
+ovrTime = float(1.5)
+# calculations 
+grossPay = payRate * hoursWorked
+fedTax = grossPay * fedTaxrate 
+ficaTax = grossPay * ficaTaxrate
+stateTax = grossPay * stateTaxrate
+taxes = fedTax + ficaTax + stateTax 
+taxes = fedTax + ficaTax + stateTax
+netPay = grossPay - taxes
+overTimepay = payRate * ovrTime
+grossPay = payRate * hoursWorked
+#expectedgrossPay = grossPay + overTimepay
+# Calculate the total pay by adding salary
+# and overtime. Assign the result to pay.
+ovrtime = payRate * ovrTime
+
+# Display the 
+print('Your gross pay is',grossPay)
+print('Your overtime pay is', ovrtime)
+print('Net pay',netPay)
